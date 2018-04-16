@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;	
+	width: 900px;
+}
+
+.white-btn {
+	background-color: white;
+	width: 60px;
+	height: 250px;
+	border: 1px solid black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.section-buttons {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.black-btn {
+	background: black;
+    width: 40px;
+    height: 150px;
+    margin: 0px 11px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+   
+}
+.black-btn1 {
+	left: 35px;
+}
+.black-btn2 {
+	left: 95px;
+}
+.black-btn3 {
+	left: 225px;
+
+}
+.black-btn4 {
+	left: 290px;
+}
+.black-btn5 {
+	left: 355px;
+}
+.black-btn6 {
+	left: 485px;
+}
+.black-btn7 {
+	left: 550px;
+}
+.black-btn8 {
+	left: 680px;
+}
+.black-btn9 {
+	left: 745px;
+}
+.black-btn10 {
+	left: 810px;
+}
+.black-btn.-active {
+	background-color: gray;
+}
+.white-btn.-active {
+	background-color: gray;
+}
