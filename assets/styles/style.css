@@ -7,6 +7,9 @@
 	justify-content: space-between;	
 	width: 900px;
 }
+.container {
+	padding-bottom: 20px;
+}
 
 .white-btn {
 	background-color: white;
@@ -16,6 +19,7 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     outline: none;
+    box-shadow: 2px 2px #a0a0a0;
 }
 
 .section-buttons {
@@ -69,5 +73,7 @@
 	background-color: gray;
 }
 .white-btn.-active {
-	background-color: gray;
+	background-color: #fcffd8;
+	transition: 0.1s;
+	box-shadow: 0px 0px #000;
 }
