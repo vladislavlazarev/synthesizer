@@ -366,16 +366,12 @@ Interface.Button = function(params){
 
 	if (this instanceof Interface.Button){
 
+		this.parent = params.parent || '.white-container';
 		this.activeText = params.activeText || false;
 
-		this.text = params.text || "Button";
+		this.keyType = params.keyType || "white";
 
-		this.type = params.type || "moment";
-
-		this.element = $("<div>", {
-			"class" : "Button",
-			"text" : this.text
-		}).appendTo(params.parent || "body")
+		this.element = $('<div class="' + this.keyType + '-btn">' + this.activeText + '</div>').appendTo(this.parent)
 			.on("mousedown touchstart", this._start.bind(this));
 
 		if (this.type === "moment"){
