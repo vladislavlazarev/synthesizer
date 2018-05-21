@@ -4,72 +4,93 @@ $(document).ready(function(){
 	const keyParams = [
 		{
 			key: 81,
-			text : "До(Q)",
-			activeText : "До(Q)",
+			text : "Q",
+			activeText : "Q",
 			frequency: "C4",
 			type: 'white'
 		},
 		{
 			key: 87,
-				text : "Ре(W)",
-			activeText : "Ре(W)",
+				text : "W",
+			activeText : "W",
 			frequency: "D4",
 			type: 'white'
 		},
 		{
 			key: 69,
-			text : "Ми(E)",
-			activeText : "Ми(E)",
+			text : "E",
+			activeText : "E",
 			frequency: "E4",
 			type: 'white'
 		},
 		{
 			key: 82,
-			text : "Фа(R)",
-			activeText : "Фа(R)",
+			text : "R",
+			activeText : "R",
 			frequency: "F4",
 			type: 'white'
 		},
 		{
 			key: 84,
-			text : "Си(Y)",
-			activeText : "Си(Y)",
+			text : "Y",
+			activeText : "Y",
 			frequency: "G4",
 			type: 'white'
 		},
 		{
 			key: 89,
-			text : "Ля(U)",
-			activeText : "Ля(U)",
+			text : "U",
+			activeText : "U",
 			frequency: "A4",
 			type: 'white'
 		},
 		{
 			key: 85,
-			text : "Соль(I)",
-			activeText : "Соль(I)",
+			text : "I",
+			activeText : "I",
 			frequency: "B4",
 			type: 'white'
 		},
 		{
 			key: 73,
-			text : "До(O)",
-			activeText : "До(O)",
+			text : "O",
+			activeText : "O",
 			frequency: "C5",
 			type: 'white'
 		},
 		{
-			key: 85,
-			text : "Соль(I)",
-			activeText : "Соль(I)",
-			frequency: "B4",
+			key: 50,
+			text : "2",
+			activeText : "2",
+			frequency: "C#4",
 			type: 'black'
 		},
 		{
-			key: 73,
-			text : "До(O)",
-			activeText : "До(O)",
-			frequency: "C5",
+			key: 51,
+			text : "3",
+			activeText : "3",
+			frequency: "Eb4",
+			type: 'black'
+		},
+		{
+			key: 53,
+			text : "5",
+			activeText : "5",
+			frequency: "F#4",
+			type: 'black'
+		},
+		{
+			key: 54,
+			text : "6",
+			activeText : "6",
+			frequency: "G#4",
+			type: 'black'
+		},
+		{
+			key: 55,
+			text : "7",
+			activeText : "Соль(7)",
+			frequency: "Bb4",
 			type: 'black'
 		}
 	];
