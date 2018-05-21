@@ -6,10 +6,15 @@
 	display: flex;
 	justify-content: space-between;	
 	width: 900px;
-}
-.container {
 	padding-bottom: 20px;
 }
+.white-container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 20px;
+}
+
 
 .white-btn {
 	background-color: white;
@@ -20,6 +25,7 @@
     border-bottom-left-radius: 5px;
     outline: none;
     box-shadow: 2px 2px #a0a0a0;
+    margin: 0 10px;
 }
 
 .section-buttons {
