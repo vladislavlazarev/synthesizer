@@ -373,7 +373,6 @@ Interface.Button = function(params){
 
 		this.element = $('<div class="' + this.keyType + '-btn">' + this.activeText + '</div>').appendTo(this.parent)
 			.on("mousedown touchstart", this._start.bind(this));
-
 		if (this.type === "moment"){
 			this.element.on("mouseup touchend", this._end.bind(this));
 		} else {

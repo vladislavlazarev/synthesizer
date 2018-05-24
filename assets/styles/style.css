@@ -1,7 +1,14 @@
 * {
 	box-sizing: border-box;
+	font-family: "SaintGeorge";
 }
-
+body {
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	background: black;
+	background: radial-gradient(#3a3a3a, #000);
+}
 .container {
 	display: flex;
 	justify-content: space-between;	
@@ -122,9 +129,99 @@
 
 
 h1 {
-	font-family: "Trebuchet MS";
-	font-size: 72px;
-	color: red;
-	margin-left: 300px;
-	margin-top: 50px;
+	font-family: "SaintGeorge";
+	font-size: 92px;
+	color: #e23f3f;
+	margin-left: 360px;
+	margin-top: 90px;
+}
+
+.floor-container {
+	height: 300px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+.right-floor.-active{
+	transform: translateX(10%);
+	transition: 2s;
+}
+.left-floor.-active {
+	transform: translateX(-10%);
+	transition: 2s;
+}
+@font-face {
+	font-family: "SaintGeorge";
+	src: url('../fonts/SaintGeorge-LowercaseStencil.otf');
+}
+.btn {
+	width: 200px;
+	height: 40px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 7px;
+	text-decoration: none;
+	outline: none;
+	color: black;
+	font-family: "SaintGeorge";
+	position: absolute;
+	padding: 10px; 
+	left: 50%;
+	top: 80%;
+	transform: translate(-50%);
+	text-align: center;
+	z-index: 920347923;
+}
+a {
+	outline: none;
+}
+.leaf1 {
+	position: absolute;
+	right: 0;
+}
+.leaf3 {
+	top: 55%;
+	left: 0;
+	position: absolute;
+	z-index: 2340234;
+}
+.leaf2 {
+	position: absolute;
+	top: 10%;
+}
+.leaf1.-active {
+	transform: translateX(100%);
+	transform: rotate(50deg);
+	transition: 1.5s;
+}
+.leaf2.-active {
+	transform: translateX(-100%);
+	transform: rotate(-50deg);
+	transition: 1.5s;
+}
+.leaf2.-active {
+	transform: translateX(-100%);
+	transform: rotate(-50deg);
+	transition: 1.5s;
+}
+
+.lamp1 {
+	
+}
+
+.floor.left-floor {
+	width: 50%;
+	background-position: right;
+	height: 300px;
+}
+
+.floor.right-floor {
+	width: 50%;
+	background-position: left;
+	height: 300px;
 }
