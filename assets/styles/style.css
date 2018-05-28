@@ -32,8 +32,8 @@ body {
 
 .white-btn {
 	background-color: white;
-	width: 60px;
-	height: 250px;
+	width: 30px;
+	height: 60px;
 	border: 1px solid black;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -148,11 +148,11 @@ h1 {
 }
 
 .right-floor.-active{
-	transform: translateX(10%);
+	transform: translateX(40%);
 	transition: 2s;
 }
 .left-floor.-active {
-	transform: translateX(-10%);
+	transform: translateX(-40%);
 	transition: 2s;
 }
 @font-face {
@@ -196,22 +196,24 @@ a {
 }
 .leaf1.-active {
 	transform: translateX(100%);
-	transform: rotate(50deg);
+	
 	transition: 1.5s;
 }
 .leaf2.-active {
 	transform: translateX(-100%);
-	transform: rotate(-50deg);
+
 	transition: 1.5s;
 }
-.leaf2.-active {
+.leaf3.-active {
 	transform: translateX(-100%);
-	transform: rotate(-50deg);
+
 	transition: 1.5s;
 }
 
-.lamp1 {
-	
+.btn.-active {
+	top: 120%;
+	transition: 2s;
+
 }
 
 .floor.left-floor {
@@ -224,4 +226,28 @@ a {
 	width: 50%;
 	background-position: left;
 	height: 300px;
+}
+
+
+.lo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	bottom: -20%;
+
+
+}
+.pianino-move {
+	position: absolute;
+	bottom: -100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 5s;
+}
+.pianino-move.-active {
+	bottom: 40%;
+	transform: translate(-50%, -50%);
+
+
+	
 }

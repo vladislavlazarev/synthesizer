@@ -1,0 +1,113 @@
+
+/*
+-------------------------------------
+			PIANINO
+-------------------------------------*/
+
+
+
+.cover {
+	width: 400px;
+	height: 70px;
+	background-color: #eaeaea;
+	position: relative;
+	border-radius: 2px;
+}
+.pepiter {
+	width: 170px;
+	height: 10px;
+	background-color: #f9f9f9;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.pepiter:before {
+	content: "";
+	display: block;
+	background-color: #dbdbdb;
+	width: 170px;
+	height: 15px;
+	position: absolute;
+	bottom: 10px;
+	border-radius: 6px 6px 0 0;
+}
+.border {
+	width: 400px;
+	background-color:#f4f4f4;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 1px;
+}
+/*.border:after,
+.border:before {
+	height: 20px;
+	width: 4px;
+	background: radial-gradient(20% 20%, black, #eaeaea);
+	content: "";
+	display: block;
+	
+}*/
+.keyboard-holder {
+	height: 80px;
+	width: 400px;
+	background-color: #cccccc;
+	margin-top: -3px;
+}
+.keyboard-holder:before,
+.keyboard-holder:after {
+	width: 30px;
+	height: 55px;
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #bababa;
+	bottom: 1px;
+}
+.keyboard-holder:before {
+	left: 0px;
+
+}
+.keyboard-holder:after {
+	right: 0px;
+}
+.left-leg {
+	height: 370px;
+	width: 10px;
+	background-color: black;
+	position: absolute;
+	transform: rotate(-55deg);
+	left: 40%;
+	top: 45%;
+	z-index: -2;
+}
+.right-leg {
+	height: 370px;
+	width: 10px;
+	background-color: black;
+	position: absolute;
+	transform: rotate(55deg);
+	right: 40%;
+	top: 45%;
+	z-index: -2;
+}
+.foots {
+	height: 13px;
+	width: 60px;
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: black;
+}
+.left-foot {
+	left:59px;
+	bottom: -215px;
+	position: absolute;
+}
+.right-foot {
+	right:59px;
+	bottom: -215px;
+	position: absolute;
+}
