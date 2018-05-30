@@ -156,6 +156,14 @@ h1 {
 	transform: translateX(-40%);
 	transition: 2s;
 }
+.right-floor.-doubleActive{
+	transform: translateX(0%);
+	transition: 2s;
+}
+.left-floor.-doubleActive {
+	transform: translateX(0%);
+	transition: 2s;
+}
 @font-face {
 	font-family: "SaintGeorge";
 	src: url('../fonts/SaintGeorge-LowercaseStencil.otf');
@@ -177,6 +185,7 @@ h1 {
 	transform: translate(-50%);
 	text-align: center;
 	z-index: 920347923;
+	cursor: pointer;
 }
 a {
 	outline: none;
@@ -195,10 +204,51 @@ a {
 	position: absolute;
 	top: 10%;
 }
+.mar1 {
+	position: absolute;
+	left: -100%;
+	top: 20%;
+	transition: 1.5s;
+	width: 800px;
+}
+.mar2 {
+	position: absolute;
+	left: -100%;
+	top: 60%;
+	transition: 1.5s;
+	width: 800px;
+}
+.mar3 {
+	top: 25%;
+	left: 100%;
+	position: absolute;
+	z-index: 2340234;
+	width: 800px;
+}
+.mar1.-active {
+	position: absolute;
+	left: -20%;
+	top: 10%;
+	transition: 1.5s;
+}
+.mar2.-active {
+	position: absolute;
+	top: 110%;
+}
+.mar3.-active {
+	position: absolute;
+	left: -20%;
+	top: 25%;
+	transition: 1.5s;
+	width: 100px;
+}
 .leaf1.-active {
 	transform: translateX(100%);
 	
 	transition: 1.5s;
+}
+.floor {
+	transition: 5s;
 }
 .leaf2.-active {
 	transform: translateX(-100%);
@@ -251,4 +301,9 @@ a {
 
 
 	
+}
+.yamaha {
+	color: red;
+	font-size: 24px;
+	font-family: "Trebuchet MS";
 }

@@ -411,7 +411,7 @@ Interface.Button.prototype._start = function(e){
 	}
 	if (!this.active){
 		this.active = true;
-		this.element.addClass("Active");
+		this.element.addClass("-active");
 		if (this.activeText){
 			this.element.text(this.activeText);
 		}
@@ -429,7 +429,7 @@ Interface.Button.prototype._end = function(e){
 	}
 	if (this.active){
 		this.active = false;
-		this.element.removeClass("Active");
+		this.element.removeClass("-active");
 		this.element.text(this.text);
 		if (this.end){
 			this.end();
@@ -441,7 +441,9 @@ Interface.Button.prototype._keydown = function(e){
 	if (e.which === this.key){
 		e.preventDefault();
 		this._start();
+
 	}
+	$(this).addClass('-active');
 };
 
 Interface.Button.prototype._keyup = function(e){

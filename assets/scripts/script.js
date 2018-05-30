@@ -3,9 +3,9 @@ $(document).ready(function(){
 	 $('.btn').click(function(){
 	 	$('.floor').addClass('-active');
 	 });
-	  $('.btn').click(function(){
+	 /* $('.btn').click(function(){
 	 	$('.leaf').addClass('-active');
-	 });
+	 });*/
 	  $('.btn').click(function(){
 	 	$('.btn').addClass('-active');
 	 });
@@ -13,8 +13,22 @@ $(document).ready(function(){
 	 	$('.lo').addClass('-active');
 	 }); 
 	   $('.btn').click(function(){
+	 	$('.car').addClass('-active');
+	 }); 
+	     
+	   $('.btn').click(function(){
 	 	$('.pianino-move').addClass('-active');
+	 	setTimeout(function() {
+	 		$('.floor').removeClass('-active');
+	 	},5000)
 	 });
+	    $('.btn').click(function(){
+	 	$('.leaf').addClass('-active')
+	 	setTimeout(function() {
+	 		$('.mar').addClass('-active');
+	 	},5000)
+	 });
+
 
 	
 
@@ -146,7 +160,9 @@ $(document).ready(function(){
 					},
 				});
 		}
-
+		$("white-btn:first-child").start(function(){
+			$("white-btn:first-child").addClass('-active');
+		});
 
 
 

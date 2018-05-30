@@ -12,6 +12,9 @@
 	background-color: #eaeaea;
 	position: relative;
 	border-radius: 2px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
 }
 .pepiter {
 	width: 170px;
@@ -110,4 +113,47 @@
 	right:59px;
 	bottom: -215px;
 	position: absolute;
+}
+.yamahaIcon {
+	width: 35px;
+	height: 40px;
+}
+.snapback {
+	position: absolute;
+	left: 16%;
+	width: 400px;
+	top: -130%;
+}
+.chain {
+	position: absolute;
+	width: 484px;
+	height: 178px;
+	left: -12%;
+}
+.car {
+	right: -3000%;
+	transition: 15s;
+	position: absolute;
+}
+.car.-active {
+	right: 10%;
+	position: absolute;
+}
+.hand {
+ 	position: absolute;
+ 	left: -130px;
+ 	top: 4px;
+ 	width: 130px;
+}
+.gun {
+	position: absolute;
+	top: 12%;
+	width: 81px;
+	left: -159px;
+}
+.cigar {
+	position: absolute;
+	width: 155px;
+	top: 30%;
+	left: -54px;
 }
