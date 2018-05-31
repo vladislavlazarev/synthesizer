@@ -28,8 +28,9 @@ $(document).ready(function(){
 	 		$('.mar').addClass('-active');
 	 	},5000)
 	 });
-
-
+	    $('.btn').click(function(){
+	    	$('h1').text('gangsta synthesizer' );
+	    });
 	
 
 	const keyParams = [

@@ -135,6 +135,7 @@ h1 {
 	color: #e23f3f;
 	margin-left: 360px;
 	margin-top: 90px;
+	transition: 3s;
 }
 
 .floor-container {
@@ -192,17 +193,18 @@ a {
 }
 .leaf1 {
 	position: absolute;
-	right: 0;
+	right: 0%;
 }
 .leaf3 {
 	top: 55%;
-	left: 0;
+
 	position: absolute;
 	z-index: 2340234;
 }
 .leaf2 {
 	position: absolute;
 	top: 10%;
+
 }
 .mar1 {
 	position: absolute;
@@ -243,7 +245,7 @@ a {
 	width: 100px;
 }
 .leaf1.-active {
-	transform: translateX(100%);
+	transform: translateX(20%);
 	
 	transition: 1.5s;
 }
@@ -251,12 +253,12 @@ a {
 	transition: 5s;
 }
 .leaf2.-active {
-	transform: translateX(-100%);
-
+	transform: translateX(-60%);
+	
 	transition: 1.5s;
 }
 .leaf3.-active {
-	transform: translateX(-100%);
+	transform: translateX(-60%);
 
 	transition: 1.5s;
 }
@@ -306,4 +308,40 @@ a {
 	color: red;
 	font-size: 24px;
 	font-family: "Trebuchet MS";
+}
+
+#slider{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333 #333 #777 #333;
+    border-radius: 25px;
+    width: 100px;
+    position: absolute;
+    height: 13px;
+    background-color: #8e8d8d;
+    background: url('../images/bg-track.png') repeat top left;
+ 	box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5),
+               0 1px 0 0px rgba(250, 250, 250, .5);
+  left: 20px;
+}
+.ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: url('../images/handle.png') no-repeat 50% 50%;
+    font-weight: bold;
+    color: #1C94C4;
+    outline: none;
+    top: -7px;
+    margin-left: -12px;
+}
+.ui-slider-range {
+    background: linear-gradient(top, #ffffff 0%,#eaeaea 100%);
+    position: absolute;
+    border: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 25px;
 }
